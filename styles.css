@@ -25,3 +25,65 @@ main {
     max-width: 850px;
     margin: 0 auto;
 }
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+header{
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+#proyectos ul {
+    display: grid;
+    ggrid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+}
+#proyectos li{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 20px;
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;   
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+
+    h1{
+        font-size: 3rem;
+    }
+    
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section{
+        padding: 15px;
+    }
+    
+}
